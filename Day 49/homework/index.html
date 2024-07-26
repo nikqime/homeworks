@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Switcher</title>
+    <style>
+        #image-container {
+            text-align: center;
+            margin-top: 50px;
+        }
+        button {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="image-container">
+        <img id="main-image" src="images/image1.jpg" alt="Image" width="500">
+        <br>
+        <button onclick="showPrevious()">Previous</button>
+        <button onclick="showNext()">Next</button>
+    </div>
+
+    <script>
+        let currentImageIndex = 0;
+        const images = ["images/image1.jpg", "images/image2.jpg"];
+
+        function showPrevious() {
+            currentImageIndex = 0;
+            document.getElementById("main-image").src = images[currentImageIndex];
+        }
+
+        function showNext() {
+            currentImageIndex = 1;
+            document.getElementById("main-image").src = images[currentImageIndex];
+        }
+    </script>
+</body>
+</html>

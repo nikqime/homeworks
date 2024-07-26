@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Functions</title>
+    <style>
+        .paragraph {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- infoJoin და ageCheck ფუნქციების გამოვლინება კონსოლში -->
+    <script>
+        function infoJoin(name, surname, age, location, hobby) {
+            return `My name is ${name} ${surname}, I am ${age} years old, I live in ${location}, and my hobby is ${hobby}.`;
+        }
+
+        function ageCheck(age) {
+            if (age > 18) {
+                console.log("Age is greater than 18.");
+            } else if (age < 18) {
+                console.log("Age is less than 18.");
+            } else {
+                console.log("Age is exactly 18.");
+            }
+        }
+
+        // infoJoin ფუნქციის გამოყენება
+        console.log(infoJoin("John", "Doe", 25, "New York", "reading"));
+
+        // ageCheck ფუნქციის გამოყენება სხვადასხვა მნიშვნელობებით
+        ageCheck(20);
+        ageCheck(18);
+        ageCheck(16);
+    </script>
+
+    <!-- alert ღილაკი -->
+    <button onclick="alerter()">Click me</button>
+
+    <script>
+        function alerter() {
+            alert("Clicked");
+        }
+    </script>
+
+    <!-- ფერის ცვლილების ღილაკი და პარაგრაფი -->
+    <p id="color-paragraph">This is a paragraph.</p>
+    <button onclick="colorChanger()">Change Color</button>
+
+    <script>
+        function colorChanger() {
+            document.getElementById("color-paragraph").style.color = "green";
+        }
+    </script>
+
+    <!-- პარაგრაფები, რომელთა ფერი უნდა შეიცვალოს საიტის ჩატვირთვისთანავე -->
+    <p class="paragraph">Paragraph 1</p>
+    <p class="paragraph">Paragraph 2</p>
+    <p class="paragraph">Paragraph 3</p>
+
+    <script>
+        window.onload = function() {
+            let paragraphs = document.getElementsByClassName("paragraph");
+            for (let i = 0; i < paragraphs.length; i++) {
+                paragraphs[i].style.color = "blue";
+            }
+        }
+    </script>
+</body>
+</html>
