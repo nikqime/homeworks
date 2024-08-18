@@ -32,7 +32,7 @@ header{
     background-color: bisque;
     width: 450px;
     height: 300px;
-    
+    border-radius: ;
 }
 .pc_1 p, .pc_2 p , .pc_2 img , .pc_3 p , .pc_3 img {
     width: 50%;
