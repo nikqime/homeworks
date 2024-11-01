@@ -16,9 +16,9 @@ guli(6)
 
 def jvari(n):
     for i in range(n):
-        if i == n // 2:  # ჰორიზონტალური ხაზი
+        if i == n // 2:
             print("*" * n)
-        else:  # ვერტიკალური ხაზი
+        else:
             print(" " * (n // 2) + "*")
 
 jvari(7)
@@ -34,21 +34,22 @@ yvavi()
 
 
 
-print("bratuxia varketilshi xar dzma da amoirchie swori pasuxi an aqve gagipent mteli ubani brat")
+print("bratuxia varketilshi xar da amoirchie swori pasuxi an aqve gagipent mteli ubani")
 choose=input("amoirchie brat-----aguri----guli----jvari----yvavi--:   ")
 if choose=="aguri":
     aguri(5)
-    print("arasworia brat amoatriale jibeebi an dagerxeva")
+    print("arasworia amoatriale jibeebi")
 elif choose=="jvari":
     jvari(5)
-    print("arasworia brat amoatriale jibeebi an dagerxeva")
+    print("arasworia amoatriale jibeebi")
 elif choose=="guli":
     guli(6)
-    print("arasworia brat amoatriale jibeebi an dagerxeva")
+    print("arasworia amoatriale jibeebi")
 elif choose=="yvavi":
     yvavi()
-    print("GILOCAV BRATUXIA SAXES AR DAGALEWAVT")
-
+    print("GILOCAV BRATUXIA")
+else:
+    print("arasworia amoatriale jibeebi")
 
 
 
